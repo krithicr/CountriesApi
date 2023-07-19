@@ -1,0 +1,139 @@
+.tools{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 2.5rem;
+}
+.homeview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    display: flex;
+    width: 25rem;
+    align-items: center;
+    background-color:hsl(209, 23%, 22%) ;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.search_icon{
+    width: 3rem;
+    text-align: center;
+    color: whitesmoke;
+}
+.search > input{
+    width: 100%;
+    height: 97%;
+    outline: none;
+    border: none;
+    background-color: hsl(209, 23%, 22%) ;
+    color: whitesmoke;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search > input::placeholder{
+    color: whitesmoke;
+    font-size: 14px;
+}
+.filter{
+    display: flex;
+    width: 10rem;
+    align-items: center;
+    background-color: hsl(209, 23%, 22%);
+    color: whitesmoke;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.filter > select{
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.filter > select > option{
+    padding: 5px;
+    margin-top: 10px;
+    background-color: hsl(209, 23%, 22%);
+    color: whitesmoke;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    width: 2rem;
+    text-align: right;
+}
+.countries{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+.country{
+    padding: 5px;
+    margin: 10px;
+    height: 22rem;
+    width: 18rem;
+    background-color: hsl(209, 23%, 22%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+.flag{
+    flex: 0.5;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.flag > img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.home_content{
+    color: whitesmoke;
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.home_title > h1{
+    padding-left: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+.home_des{
+    padding-left: 15px;
+}
+
+@media (max-width:600px){
+    .tools{
+        gap: 20px;
+        width: 100%;
+    }
+    .search{
+        width: 15rem;
+    }
+    .country{
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .home_title{
+        margin-top: 10px;
+    }
+    .home_des{
+        margin-top: 10px;
+    }
+}

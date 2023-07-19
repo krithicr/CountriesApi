@@ -1,0 +1,27 @@
+.header_box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_left_side{
+    color: whitesmoke;
+    
+    font-size: 14px;
+}
+.header_right_side{
+    color: whitesmoke;
+    
+    font-size: 12px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width:600px){
+    .header_left_side > h1{
+        font-size: 20px;
+    }
+}
